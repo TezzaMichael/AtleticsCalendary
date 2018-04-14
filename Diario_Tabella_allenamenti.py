@@ -1,4 +1,4 @@
-"""Programma che simula un calendario sportivo di un velocista
+"""Programma che simula un calendario sportivo di un atleta
 con tanto di indicatori di modalità,allenamento da fare e orario di inizio.
 Alla fine dell'allenamento se hai superato un record puoi trascriverli nel file record.csv
 @author Michael Tezza
@@ -7,14 +7,14 @@ Alla fine dell'allenamento se hai superato un record puoi trascriverli nel file 
 def Index_1():
     a=""
     bgcolor("blue")
-    title("Sciuscio Calendar 3.2")
+    title("Athletics Calendar 3.2")
     Penna=turtle.Turtle()
     screen= turtle.Screen()
     screen.setup(1200,1000,0,0)
     Penna.penup()
     Penna.goto(-650,280)
     Penna.pencolor("white")
-    Penna.write("Benvenuti nel calendario riservato agli atleti di Sciuscio",font=("Arial",40, "normal"))
+    Penna.write("Benvenuti nel calendario riservato agli atleti italiani",font=("Arial",40, "normal"))
     Penna.right(90)
     Penna.forward(50)
     Penna.write("Qui potrai,tramite un file csv,inserire gli allenamenti mensili",font=("Arial",20, "normal"))
@@ -85,7 +85,7 @@ def Index_1():
             
 
 def Index ():
-    print("Benvenuti nel calendario riservato agli atleti di Sciuscio")
+    print("Benvenuti nel calendario riservato agli atleti italiani")
     print("Qui potrai,tramite un file csv,inserire gli allenamenti mensili")
     print("Inserire nel file csv: cosa c'è da fare tra [scarico,lavoro,palestra,salite,gara,riposo]")
     print("                       scrivi l'allenamento")
@@ -113,7 +113,6 @@ def Tabella_allenamenti() :
     Penna.penup()
     Penna.goto(-650,-340)
     Penna.pendown()
-    Penna.speed(0)
     Penna.speed(0)
     
     giorno=1
